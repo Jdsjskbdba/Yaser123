@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مجمع الزهراء الطبي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <img src="dentistry.png" alt="مجمع الزهراء الطبي">
+    <h1>مجمع الزهراء الطبي</h1>
+</header>
+
+<section class="services">
+    <h2>الخدمات</h2>
+    <div class="services-grid">
+        <div class="service">
+            <img src="dentist.gif" alt="الحشوات الضوئية والمعدنية">
+            <p>الحشوات الضوئية والمعدنية</p>
+        </div>
+        <div class="service">
+            <img src="dental-care.gif" alt="جلسات التنظيف وإزالة التكلسات">
+            <p>جلسات التنظيف وإزالة التكلسات</p>
+        </div>
+        <div class="service">
+            <img src="caries.gif" alt="جلسات قلع الأسنان والجذور التالفة">
+            <p>جلسات قلع الأسنان والجذور التالفة</p>
+        </div>
+        <div class="service">
+            <img src="dental-implant.gif" alt="زراعة الأسنان">
+            <p>زراعة الأسنان</p>
+        </div>
+        <div class="service">
+            <img src="denture.gif" alt="طقم ثابت وطقم متحرك">
+            <p>طقم ثابت وطقم متحرك</p>
+        </div>
+        <div class="service">
+            <img src="smile.gif" alt="تقويم الأسنان">
+            <p>تقويم الأسنان</p>
+        </div>
+    </div>
+</section>
+
+<section class="doctors">
+    <h2>الأطباء</h2>
+    <div class="doctors-slider">
+        <div class="doctor">
+            <img src="Kskst.jpg" alt="د. علي ثابت الحسيني">
+            <p>د. علي ثابت الحسيني</p>
+        </div>
+        <div class="doctor">
+            <img src="Kskst.jpg" alt="د. محمد علي الموسوي">
+            <p>د. محمد علي الموسوي</p>
+        </div>
+        <div class="doctor">
+            <img src="Mskshxb.jpg" alt="د. محمد عبدالله الأسدي">
+            <p>د. محمد عبدالله الأسدي</p>
+        </div>
+    </div>
+</section>
+
+<section class="booking-form">
+    <h2>نظام الحجز</h2>
+    <form action="https://formspree.io/f/xovqlqry" method="POST">
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">العمر:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="gender">الجنس:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">ذكر</option>
+            <option value="female">أنثى</option>
+        </select>
+
+        <label for="doctor">اختيار الدكتور:</label>
+        <select id="doctor" name="doctor" required>
+            <option value="علي ثابت الحسيني">د. علي ثابت الحسيني</option>
+            <option value="محمد علي الموسوي">د. محمد علي الموسوي</option>
+            <option value="محمد عبدالله الأسدي">د. محمد عبدالله الأسدي</option>
+        </select>
+
+        <label for="date">التاريخ:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">الوقت:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="description">وصف الحالة:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <button type="submit">إرسال الحجز</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
